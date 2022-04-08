@@ -1,0 +1,22 @@
+jwt:
+  secretKey: SupperKey
+  expireTime: 86400000
+server:
+  port: 80
+  error:
+    include-message: always
+spring:
+  sql:
+    init:
+      mode: always
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: rot123
+    url: jdbc:postgresql://localhost:5432/exam_spring_modul2
+
+
